@@ -3,7 +3,10 @@
 @import './mixins';
 
 :root {
-  --zeen-player-padding-aside-witdh: 300px;
+  --main-color: #1E90FF;
+  --main-color-light: #FFF2CC;
+  --dark-color: black;
+  --light-color: white;
 
   @include desktopHd {
   }

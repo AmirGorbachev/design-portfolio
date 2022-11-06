@@ -6,8 +6,8 @@
 
 <script>
 // @ is an alias to /src
-import Sidebar from '@/components/Sidebar.vue'
-import ContentWrapper from '@/components/ContentWrapper.vue'
+import Sidebar from '@/components/layouts/Sidebar.vue'
+import ContentWrapper from '@/components/layouts/ContentWrapper.vue'
 
 export default {
   name: 'Home',
@@ -20,9 +20,10 @@ export default {
 
 <style scoped lang="scss">
 .home {
+  min-height: 100vh;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: 'sidebar content';
